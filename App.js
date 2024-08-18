@@ -70,7 +70,6 @@ export default function App(props) {
         const evalResult = eval(exp);
 
         if (typeof evalResult === 'number' && !isNaN(evalResult)) {
-          // const fixing = evalResult.toFixed(5)
           const fix = parseFloat(evalResult.toFixed(4));
           setResult(fix.toString());
         } else {
